@@ -17,7 +17,7 @@ import ProductData from "./products.json";
 import ProductDetail from "./Components/ProductDetail";
 
 const App = () => {
-  const [products, setProducts] = useState();
+  const [products, setProducts] = useState([]);
 
   const headPhones = products.filter(
     (product) => product.category === "headphones"

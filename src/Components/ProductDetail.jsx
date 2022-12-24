@@ -11,7 +11,7 @@ const ProductDetail = () => {
 
  let { name } = useParams()
 
-const [products, setProducts] = useState();
+const [products, setProducts] = useState([]);
 
 useEffect(() => {
     setProducts(ProductData);
