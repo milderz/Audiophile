@@ -8,7 +8,7 @@ import MainHero from "./Components/MainHero";
 import ProductNav from "./Components/ProductNav";
 import AboutCard from "./Components/AboutCard";
 import { GlobalStyles } from "./Components/Styles/GlobalStyles";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AppContextProvider } from "./Components/Context/AppContext";
 import ProductHero from "./Components/ProductHero";
 import ProductCard from "./Components/ProductCard";
@@ -17,7 +17,7 @@ import ProductData from "./products.json";
 import ProductDetail from "./Components/ProductDetail";
 
 const App = () => {
-  const [products, setProducts] = useState(ProductData);
+  const [products, setProducts] = useState();
 
   const headPhones = products.filter(
     (product) => product.category === "headphones"
@@ -33,9 +33,9 @@ const App = () => {
   );
   earphones.sort((a, b) => Number(b.new) - Number(a.new));
 
-  // console.log(products[0].slug);
-  console.log(speakers[0].slug);
-
+  useEffect(() => {
+    setProducts(ProductData);
+  }, []);
   return (
     <AppContextProvider>
       <Router>
