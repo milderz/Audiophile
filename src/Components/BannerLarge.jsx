@@ -23,8 +23,8 @@ const BannerLarge = ({ products }) => {
         <PrimaryBtn
           text="SEE PRODUCT"
           version="black"
-          category={ZX9Speaker[0].category}
-          path={ZX9Speaker[0].slug}
+          category={ZX9Speaker[0]?.category}
+          path={ZX9Speaker[0]?.slug}
         />
       </div>
     </StyledBannerLarge>

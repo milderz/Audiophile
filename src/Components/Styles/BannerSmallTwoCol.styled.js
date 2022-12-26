@@ -20,7 +20,7 @@ export const StyledBannerSmallTwoCol = styled.section`
 
   .image {
     flex: 1;
-    background: url("assets/home/desktop/image-earphones-yx1.jpg");
+    background: url("/assets/home/desktop/image-earphones-yx1.jpg");
     background-position: center;
     background-size: cover;
     border-radius: 0.9rem;

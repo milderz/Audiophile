@@ -47,11 +47,11 @@ const App = () => {
               path="/"
               element={
                 <>
-                  <MainHero />
+                  <MainHero products={products} />
                   <ProductNav />
                   <BannerLarge products={products} />
-                  <BannerSmall />
-                  <BannerSmallTwoCol />
+                  <BannerSmall products={products} />
+                  <BannerSmallTwoCol products={products} />
                   <AboutCard />
                 </>
               }
