@@ -3,7 +3,6 @@ import QuantityBtn from "./QuantityBtn";
 import { StyledProductDetailCard } from "./Styles/ProductDetailCard.styled";
 
 const ProductDetailCard = ({ productDetail }) => {
-  productDetail.map((pr) => console.log(pr.image.desktop));
   return (
     <>
       {productDetail.map(
@@ -26,7 +25,6 @@ const ProductDetailCard = ({ productDetail }) => {
                   </div>
                 </div>
               </StyledProductDetailCard>
-              <div></div>
             </>
           )
       )}

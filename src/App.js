@@ -132,7 +132,7 @@ const App = () => {
                 </>
               }
             />
-            <Route path="/checkout" />
+
             <Route
               path="/:name/:name"
               element={
@@ -141,6 +141,7 @@ const App = () => {
                 </>
               }
             />
+            <Route path="/checkout" />
           </Routes>
 
           <Footer />
