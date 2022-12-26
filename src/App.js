@@ -13,8 +13,8 @@ import { AppContextProvider } from "./Components/Context/AppContext";
 import ProductHero from "./Components/ProductHero";
 import ProductCard from "./Components/ProductCard";
 import ProductData from "./products.json";
-
 import ProductDetail from "./Components/ProductDetail";
+import ScrollToTop from "./Components/ScrollToTop";
 
 const App = () => {
   const [products, setProducts] = useState([]);
@@ -39,6 +39,7 @@ const App = () => {
   return (
     <AppContextProvider>
       <Router>
+        <ScrollToTop />
         <div className="App">
           <GlobalStyles />
           <Header />

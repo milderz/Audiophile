@@ -1,13 +1,14 @@
-
-import { Link } from 'react-router-dom'
-import { StyledPreviousPage } from './Styles/PreviousPage.styled'
+import { useNavigate } from "react-router-dom";
+import { StyledPreviousPage } from "./Styles/PreviousPage.styled";
 
 const PreviousPage = () => {
+  const navigate = useNavigate();
+
   return (
     <StyledPreviousPage>
-      <Link>Go Back</Link>
+      <button onClick={() => navigate(-1)}>Go Back</button>
     </StyledPreviousPage>
-  )
-}
+  );
+};
 
-export default PreviousPage
+export default PreviousPage;

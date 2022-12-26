@@ -7,7 +7,6 @@ const BannerSmallTwoCol = ({ products }) => {
     (product) => product.name === "YX1 Wireless Earphones"
   );
 
-  console.log(YX1Earphones);
   return (
     <StyledBannerSmallTwoCol>
       <div className="image"></div>
