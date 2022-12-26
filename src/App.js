@@ -49,7 +49,7 @@ const App = () => {
                 <>
                   <MainHero />
                   <ProductNav />
-                  <BannerLarge />
+                  <BannerLarge products={products} />
                   <BannerSmall />
                   <BannerSmallTwoCol />
                   <AboutCard />

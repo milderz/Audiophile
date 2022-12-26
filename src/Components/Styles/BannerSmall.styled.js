@@ -6,7 +6,7 @@ export const StyledBannerSmall = styled.section`
   height: 32rem;
   border-radius: 0.9rem;
   margin: 0 auto 4.8rem auto;
-  background: url("assets/home/desktop/image-speaker-zx7.jpg");
+  background: url("/assets/home/desktop/image-speaker-zx7.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
