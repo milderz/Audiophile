@@ -8,6 +8,7 @@ export const StyledBannerSmallTwoCol = styled.section`
   margin: 0 auto 4.8rem auto;
   display: flex;
   gap: 3rem;
+  max-width: 111rem;
 
   @media screen and (max-width: 1280px) {
     width: 90%;

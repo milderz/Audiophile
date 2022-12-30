@@ -21,6 +21,7 @@ export const StyledFooter = styled.footer`
     grid-template-areas: "a b" "c d" "e e";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 6.8rem 8.6rem 8.6rem;
+    max-width: 111rem;
 
     @media screen and (max-width: 1280px) {
       width: 90%;

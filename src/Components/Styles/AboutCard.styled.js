@@ -7,6 +7,7 @@ export const StyledAboutCard = styled.article`
   display: flex;
   gap: 3rem;
   margin: 0 auto 4.8rem auto;
+  max-width: 111rem;
   @media screen and (max-width: 1280px) {
     width: 90%;
   }

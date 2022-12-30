@@ -14,6 +14,7 @@ export const StyledBannerSmall = styled.section`
   justify-content: center;
   padding-left: 9.6rem;
   gap: 4rem;
+  max-width: 111rem;
 
   h4 {
     color: var(--black);

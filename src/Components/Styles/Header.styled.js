@@ -17,6 +17,7 @@ export const StyledHeader = styled.header`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 111rem;
 
     @media screen and (max-width: 1280px) {
       width: 90%;

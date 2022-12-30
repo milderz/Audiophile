@@ -8,6 +8,7 @@ export const StyledBannerLarge = styled.section`
   border-radius: 0.9rem;
   display: flex;
   overflow: hidden;
+  max-width: 111rem;
 
   @media screen and (max-width: 1280px) {
     width: 90%;

@@ -34,6 +34,7 @@ export const StyledMainHero = styled.section`
     justify-content: center;
     align-items: flex-start;
     gap: 2.8rem;
+    max-width: 111rem;
 
     .headline {
       margin-bottom: -1.4rem;
