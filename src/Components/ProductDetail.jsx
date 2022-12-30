@@ -22,8 +22,8 @@ const ProductDetail = () => {
     <StyledProductDetail>
       <PreviousPage />
 
-      {productDetail.map((product) => (
-        <>
+      {productDetail.map((product, index) => (
+        <section key={index}>
           <article className="product-detail-card">
             <div
               className="img-content"
@@ -52,18 +52,33 @@ const ProductDetail = () => {
             <div className="in-the-box">
               <h4>IN THE BOX</h4>
               <ul>
-                {product.includedItems.map((item) => (
-                  <>
-                    <li>
-                      <p className="itb-qty">{item.quantity}x</p>
-                      <p className="item-item">{item.item}</p>
-                    </li>
-                  </>
+                {product.includedItems.map((item, index) => (
+                  <li key={index}>
+                    <p className="itb-qty">{item.quantity}x</p>
+                    <p className="item-item">{item.item}</p>
+                  </li>
                 ))}
               </ul>
             </div>
           </section>
-        </>
+          <div className="detail-grid-images">
+            {Object.keys(product.gallery).map((image, index) => (
+              <div
+                style={{
+                  backgroundImage: `url(/${product.gallery[image].desktop})`,
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "cover",
+                }}
+              ></div>
+            ))}
+          </div>
+          <div className="related-products">
+            <div className="card"></div>
+            <div className="card"></div>
+            <div className="card"></div>
+          </div>
+        </section>
       ))}
     </StyledProductDetail>
   );
