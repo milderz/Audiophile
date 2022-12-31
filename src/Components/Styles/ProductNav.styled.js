@@ -1,13 +1,15 @@
 import styled from "styled-components";
 
 export const StyledProductNav = styled.nav`
-  margin: ${({ mobileNav }) => (mobileNav ? "9.6rem 0 0 0" : "11.5rem 0")};
+  margin: ${({ mobileNav }) =>
+    mobileNav ? "9.6rem 0 0 0" : "11.5rem auto 11.5rem auto"};
   height: 30.9rem;
   background-color: #fff;
   position: ${({ mobileNav }) => (mobileNav ? "absolute" : "static")};
   width: 100%;
   top: 0;
   left: 0;
+  max-width: 111rem;
 
   border-bottom-left-radius: ${({ mobileNav }) => (mobileNav ? "1.6rem" : "0")};
   border-bottom-right-radius: ${({ mobileNav }) =>

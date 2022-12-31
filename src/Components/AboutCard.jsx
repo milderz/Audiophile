@@ -1,16 +1,24 @@
-import { StyledAboutCard } from "./Styles/AboutCard.styled"
-
+import { StyledAboutCard } from "./Styles/AboutCard.styled";
 
 const AboutCard = () => {
   return (
     <StyledAboutCard>
       <div className="text-content">
-       <h3>Bringing you the <span>best</span> audio gear</h3>
-       <p>Located at the heart of New York City, Audiophile is the premier store for high end headphones, earphones, speakers, and audio accessories. We have a large showroom and luxury demonstration rooms available for you to browse and experience a wide range of our products. Stop by our store to meet some of the fantastic people who make Audiophile the best place to buy your portable audio equipment.</p>
+        <h3>
+          Bringing you the <span>best</span> audio gear
+        </h3>
+        <p>
+          Located at the heart of New York City, Audiophile is the premier store
+          for high end headphones, earphones, speakers, and audio accessories.
+          We have a large showroom and luxury demonstration rooms available for
+          you to browse and experience a wide range of our products. Stop by our
+          store to meet some of the fantastic people who make Audiophile the
+          best place to buy your portable audio equipment.
+        </p>
       </div>
       <div className="image-content"></div>
     </StyledAboutCard>
-  )
-}
+  );
+};
 
-export default AboutCard
+export default AboutCard;

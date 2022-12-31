@@ -37,6 +37,12 @@ body {
   font-family: 'Manrope', sans-serif;
 }
 
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
 
 
 /* Forms */

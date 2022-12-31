@@ -46,7 +46,7 @@ export const StyledAboutCard = styled.article`
 
   .image-content {
     flex: 1;
-    background: url("assets/shared/desktop/image-best-gear.jpg");
+    background: url("/assets/shared/desktop/image-best-gear.jpg");
     background-position: center;
     background-size: cover;
     border-radius: 0.9rem;

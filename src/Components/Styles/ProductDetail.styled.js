@@ -71,6 +71,7 @@ export const StyledProductDetail = styled.section`
 
     p {
       margin-top: 4.5rem;
+      white-space: pre-line;
     }
   }
 
@@ -128,6 +129,39 @@ export const StyledProductDetail = styled.section`
       height: auto;
       grid-template-columns: 1fr;
       grid-template-rows: 20.6rem 20.6rem 43.7rem;
+    }
+  }
+
+  .related-products-title {
+    margin: 16.6rem auto 6.9rem auto;
+    text-align: center;
+  }
+
+  .related-products {
+    height: 47.1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+
+    @media screen and (max-width: 750px) {
+      grid-template-columns: 1fr;
+      height: 160rem;
+    }
+
+    article {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+
+      img {
+        object-fit: contain;
+        border-radius: 0.9rem;
+      }
+
+      h4 {
+        font-size: 2.4rem;
+      }
     }
   }
 `;
