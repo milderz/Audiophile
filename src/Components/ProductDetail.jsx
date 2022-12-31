@@ -1,5 +1,4 @@
 import PreviousPage from "./PreviousPage";
-// import ProductDetailCard from "./ProductDetailCard";
 import { StyledProductDetail } from "./Styles/ProductDetail.styled";
 import { useParams } from "react-router-dom";
 import ProductData from "../products.json";
