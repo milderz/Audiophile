@@ -1,15 +1,14 @@
-import { StyledProductNav } from "./Styles/ProductNav.styled"
+import { StyledProductNav } from "./Styles/ProductNav.styled";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
-const ProductNav = ({mobileNav, navActive}) => {
+const ProductNav = ({ mobileNav, navActive }) => {
   return (
     <StyledProductNav mobileNav={mobileNav} navActive={navActive}>
       <ul>
-       <li>
-        
-         <Link to="/headphones">
+        <li>
+          <Link to="/headphones">
             <img
               src="/assets/shared/desktop/image-headphones.png"
               alt="heaphones-link"
@@ -20,10 +19,9 @@ const ProductNav = ({mobileNav, navActive}) => {
               <FontAwesomeIcon icon={faAngleRight} />
             </p>
           </Link>
-       </li>
-       <li>
-        
-         <Link to="/speakers">
+        </li>
+        <li>
+          <Link to="/speakers">
             <img
               src="/assets/shared/desktop/image-speakers.png"
               alt="speakers-link"
@@ -34,10 +32,9 @@ const ProductNav = ({mobileNav, navActive}) => {
               <FontAwesomeIcon icon={faAngleRight} />
             </p>
           </Link>
-       </li>
-       <li>
-        
-         <Link to="/earphones">
+        </li>
+        <li>
+          <Link to="/earphones">
             <img
               src="/assets/shared/desktop/image-earphones.png"
               alt="earphones-link"
@@ -48,10 +45,10 @@ const ProductNav = ({mobileNav, navActive}) => {
               <FontAwesomeIcon icon={faAngleRight} />
             </p>
           </Link>
-       </li>
+        </li>
       </ul>
     </StyledProductNav>
-  )
-}
+  );
+};
 
-export default ProductNav
+export default ProductNav;
