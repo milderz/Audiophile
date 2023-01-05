@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledPreviousPage = styled.header`
-  margin: 18.2rem 0 6.3rem 0;
+  margin: 18.2rem 0 4.5rem 0;
 
   button {
     font-size: 1.5rem;

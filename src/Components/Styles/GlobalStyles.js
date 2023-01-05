@@ -35,6 +35,7 @@ body {
   letter-spacing: 1px;
   min-height: 100vh;
   font-family: 'Manrope', sans-serif;
+  background-color: #F1F1F1;
 }
 
 img,
@@ -107,9 +108,16 @@ font-weight: 700;
 line-height: 3.4rem;
 }
 
+h5 {
+font-size: 1.8rem;
+font-weight: 700;
+line-height: 3.4rem;
+}
+
 p {
   font-size: var(--text-sm);
   line-height: 2.6rem;
+  font-weight: 500;
 }
 
 .headline {

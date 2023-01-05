@@ -15,6 +15,7 @@ import ProductCard from "./Components/ProductCard";
 import ProductData from "./products.json";
 import ProductDetail from "./Components/ProductDetail";
 import ScrollToTop from "./Components/ScrollToTop";
+import Checkout from "./Components/Checkout";
 
 const App = () => {
   const [products, setProducts] = useState([]);
@@ -141,7 +142,14 @@ const App = () => {
                 </>
               }
             />
-            <Route path="/checkout" />
+            <Route
+              path="/checkout"
+              element={
+                <>
+                  <Checkout />
+                </>
+              }
+            />
           </Routes>
 
           <Footer />
